@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/turmaADM.css">
+    <title>Turma</title>
+</head>
+<body>
+    <header class="header">
+        <div class="caixaLogo">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="entrada">
+            <span>Que bom ter você conosco, Willian</span>
+            <img src="images/users/user.png" alt="User Icon" class="iconeUsers">
+        </div>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><img src="images/icones/agenda.png" class="agenda"><a href="calendarioADM.html">Calendário</a></li>
+                <li><img src="images/icones/escreva.png" class="agenda"><a href="frequenciaADM.html">Frequência</a></li>
+                <li><img src="images/icones/coin.png" class="agenda"><a href="FaturaADM.html">Fatura</a></li>
+                <li><img src="images/icones/user.png" class="agenda"><a href="DadosEmpresariaisADM.html">Dados Pessoais</a></li>
+                <li><img src="images/icones/people-together.png" class="agenda"><a href="turmADM.html">Turma</a></li>
+                <li><img src="images/icones/tablet.png" class="agenda"><a href="controleADM.html">Controle</a></li>
+                <li><img src="images/icones/receipt.png" class="agenda"><a href="DespesasADM.html">Despesas Mensais</a></li>
+                <li><img src="images/icones/cadastro.png" class="agenda"><a href="cadastrarADM.html">Cadastrar</a></li>
+                <li><img src="images/icones/exit.png" class="agenda"><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Turma</h1>
+            <div class="turma">
+                <label for="turno">Turno:</label>
+                <select id="turno">
+                    <option value="matutino">Matutino</option>
+                    <option value="vespertino">Vespertino</option>
+                    <option value="noturno">Noturno</option>
+                </select>
+                <div class="horarios">
+                    <input type="radio" id="horario1" name="horario" value="05:30h às 07h">
+                    <label for="horario1">05:30h às 07h</label><br>
+                    <input type="radio" id="horario2" name="horario" value="07:30 às 09h">
+                    <label for="horario2">07:30 às 09h</label><br>
+                    <input type="radio" id="horario3" name="horario" value="09h às 11h">
+                    <label for="horario3">09h às 11h</label>
+                </div>
+                <div class="presenca">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>NOMES</th>
+                                <th>PRESENÇA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Amanda Oliveira Souza</td>
+                                <td>PRESENTE</td>
+                            </tr>
+                            <tr>
+                                <td>Beatriz Lima Ferreira</td>
+                                <td>PRESENTE</td>
+                            </tr>
+                            <tr>
+                                <td>Juliana Mendes Costa</td>
+                                <td>AUSENTE</td>
+                            </tr>
+                            <tr>
+                                <td>Gabriela Rocha Souza</td>
+                                <td>AUSENTE</td>
+                            </tr>
+                            <tr>
+                                <td>Mariana Cardoso Lima</td>
+                                <td>PRESENTE</td>
+                            </tr>
+                            <tr>
+                                <td>Fernanda Souza Oliveira</td>
+                                <td>PRESENTE</td>
+                            </tr>
+                            <tr>
+                                <td>Larissa Taveira Mendes</td>
+                                <td>AUSENTE</td>
+                            </tr>
+                            <tr>
+                                <td>Patrícia Nogueira Souza</td>
+                                <td>PRESENTE</td>
+                            </tr>
+                            <tr>
+                                <td>Vanessa Rodrigues Lima</td>
+                                <td>PRESENTE</td>
+                            </tr>
+                            <tr>
+                                <td>Ana Paula Silva</td>
+                                <td>PRESENTE</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

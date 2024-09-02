@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed; 
+    width: 100%;
+    height: 128px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background: #0E5D8C;
+    z-index: 1000; 
+}
+
+.caixaLogo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+    margin-left: 40px;
+}
+
+.entrada {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 40px;
+}
+
+.entrada span {
+    margin-right: 10px;
+}
+
+.iconeUsers {
+    height: 45px;
+}
+
+nav.sidebar {
+    background-color: #d5e8f4;
+    width: 220px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 128px; 
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 900; 
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.sidebar ul li {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.agenda {
+    width: 34px;
+    height: 34px;
+    margin-right: 16px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.controle-filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 24%;
+    flex-direction: column;
+}
+
+.controle-filtros select {
+    padding: 10px;
+    font-size: 14px;
+    width: 190px;
+    text-align: center;
+    background-color: #A3D1EE
+}
+
+.btn-buscar {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 192px;
+}
+
+.tabela-controle {
+    background: #E5F2FA;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+    margin-left: 37%;
+    margin-top: -14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+}
+
+.tabela h2 {
+    margin-bottom: 20px;
+    color: #0E5D8C;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.nome {
+    flex: 2;
+}
+
+.situacao {
+    flex: 1;
+    padding: 5px;
+}
+
+.tabela{
+    width: 781px;
+    margin-top: -44px;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    color: #0454A3;
+    margin-left: -39%;
+}
+
+
+.tabela-frequencia {
+    width: 60%; 
+    margin: 20px auto; 
+    border-collapse: separate; 
+    border-spacing: 0 20px; 
+}
+
+
+.tabela-frequencia th, .tabela-frequencia td {
+    padding: 10px 15px; 
+    text-align: center; 
+    border: 1px solid #ddd; 
+    background-color: #ffffff; 
+    box-sizing: border-box; 
+}
+
+
+.tabela-frequencia th {
+    background-color: #0E5D8C;
+    color: white; 
+}
+
+
+.tabela-frequencia tbody tr {
+    background-color: #E5F2FA; 
+}
+
+
+.tabela-frequencia tbody tr:hover {
+    background-color: #ddd; 
+}
+
+select {
+    border: solid white;
+    text-align: center;
+}  

@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #ff9797; */
+}
+
+header {
+    background-color: #005a92;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 50%;
+}
+
+.logo{
+    text-align: center;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin:15px;
+}
+
+.navbar .icon img {
+    width: 69%;
+}
+
+h1{
+    margin-left: 12%;
+    color: #0E5D8C;
+}
+.Pix {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    /* box-shadow: 0px 0px 10px 0px #aaa; */
+    text-align: center;
+}
+
+.Pix img {
+    width: 25%;
+}
+
+.Pix p{
+    text-align: left;
+}
+
+.Pix div{
+    display: flex;
+    max-width: 60%;
+    margin: auto;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.alunos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.alunos  div {
+    background-color: #0073b3;
+    border-radius: 8px;
+    color: #fff;
+    margin: 10px;
+    width: 80%;
+    text-align: left;
+    display: flex;
+    max-width: 60%;
+}
+
+.alunos img {
+    border-radius: 8px;
+    height: 335px;
+    width: 324px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.alunos h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.alunos p {
+    margin: 5px 0;
+}
+
+.alunos p strong {
+    display: block;
+    font-weight: bold;
+}
+
+.alunos ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.alunos li {
+    padding-left: 30px;
+    margin: 5px 0;
+}
+
+.premios{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+.footer {
+    background-color: #005a92;
+    color: #fff;
+    padding: 20px 14% 10px 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer img {
+    width: 6.31%;
+}
+
+.footer div {
+    text-align: left;
+}
+
+.footer .sociais {
+    display: flex;
+}
+
+.footer .sociais a {
+    margin: 0 10px;
+}
+
+.footer .sociais img {
+    width: 67%;   
+}
+
+.dados{
+    line-height: 1px;
+}
+
+@media screen and (max-width : 650px)
+{
+    .navbar nav ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        gap: 19px;
+      }
+    
+      .navbar .logo img {
+        width: 75%;
+      }
+    
+      .navbar .icon img {
+        width: 111%;
+      }
+
+      .Pix div {
+        display: flex;
+        max-width: 100%; 
+        margin: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .Pix img {
+        width: 80%;
+    }
+
+    .alunos div {
+        background-color: #0073b3;
+        border-radius: 8px;
+        color: #fff;
+        margin: 10px;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .alunos img {
+        border-radius: 8px;
+        height: 256px;
+        width: 256px;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+    .alunos li {
+        padding-left: 0;
+        margin: 5px 0;
+    }
+    .footer div {
+        text-align: center;
+    }
+    .footer {
+        background-color: #005a92;
+        color: #fff;
+        padding: 20px 14% 10px 14%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer img {
+        width: 24%;
+    }
+
+    .footer .sociais {
+        display: flex;
+        padding: 4% 0px 0 0;
+    }
+    .dados {
+        line-height: 7px;
+    }
+}

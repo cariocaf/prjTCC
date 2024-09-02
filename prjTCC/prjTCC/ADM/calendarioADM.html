@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calendario.css">
+    <title>Calendário</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="caixaLogo">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="entrada">
+            <span>Que bom ter você conosco, Willian</span>
+            <img src="images/users/user.png" alt="Ícone de Usuário" class="iconeUsuarios">
+        </div>
+    </header>
+    <main>
+        <nav class="barra-lateral">
+            <ul>
+                <li><img src="images/icones verde/agenda.png" class="icone"><a href="calendarioADM.html">Calendário</a></li>
+            <li><img src="images/icones/escreva.png" class="icone"><a href="frequenciaADM.html">Frequência</a></li>
+            <li><img src="images/icones/coin.png" class="icone"><a href="FaturaADM.html">Fatura</a></li>
+            <li><img src="images/icones/user.png" class="icone"><a href="DadosEmpresariaisADM.html">Dados Pessoais</a></li>
+            <li><img src="images/icones/people-together.png" class="icone"><a href="turmaADM.html">Turma</a></li>
+            <li><img src="images/icones/tablet.png" class="icone"><a href="controleADM.html">Controle</a></li>
+            <li><img src="images/icones/receipt.png" class="icone"><a href="DespesasADM.html">Despesas Mensais</a></li>
+            <li><img src="images/icones/cadastro.png" class="icone"><a href="cadastrarADM.html">Cadastrar</a></li>
+            <li><img src="images/icones/exit.png" class="icone"><a href="../login.html">Sair</a></li>
+            </ul>
+        </nav>
+        <section class="conteudo">
+            <div class="calendario">
+                <div class="navegacao-mes">
+                    <button class="mes-anterior">&lt;</button>
+                    <h2 id="mes-ano">Agosto 2024</h2>
+                    <button class="mes-proximo">&gt;</button>
+                </div>
+                <div class="grade-calendario" id="calendario">
+                    <!-- Os dias serão pelo JavaScript -->
+                </div>
+                <div class="botoes">
+                    <button>Editar</button>
+                    <button onclick="Adicionarimagem()">Adicionar</button>
+        </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <span id="fechar" class="fechar">&times;</span>
+        <img id="imagem-modal" class="imagem-modal" src="" alt="Imagem do Calendário">
+    </div>
+    <script src="jsAdm/calendarioADM.js"></script>
+</body>
+</html>

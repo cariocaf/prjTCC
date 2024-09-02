@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastrarTurma.css">
+    <title>Cadastrar Turma</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="caixaLogo">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="entrada">
+            <span>Que bom ter você conosco, Liziani</span>
+            <img src="images/users/user.png" alt="Ícone de Usuário" class="iconeUsuarios">
+        </div>
+    </header>
+    <main>
+        <nav class="barra-lateral">
+            <ul>
+                <li><img src="images/icones/agenda.png" class="icone"><a href="calendarioADM.html">Calendário</a></li>
+            <li><img src="images/icones/escreva.png" class="icone"><a href="frequenciaADM.html">Frequência</a></li>
+            <li><img src="images/icones/coin.png" class="icone"><a href="FaturaADM.html">Fatura</a></li>
+            <li><img src="images/icones/user.png" class="icone"><a href="DadosEmpresariaisADM.html">Dados Pessoais</a></li>
+            <li><img src="images/icones/people-together.png" class="icone"><a href="turmaADM.html">Turma</a></li>
+            <li><img src="images/icones/tablet.png" class="icone"><a href="controleADM.html">Controle</a></li>
+            <li><img src="images/icones/receipt.png" class="icone"><a href="DespesasADM.html">Despesas Mensais</a></li>
+            <li><img src="images/icones verde/cadastro (1).png" class="icone"><a href="cadastrarADM.html">Cadastrar</a></li>
+            <li><img src="images/icones/exit.png" class="icone"><a href="../login.html">Sair</a></li>
+            </ul>
+        </nav>
+        <main class="conteudo">
+            <section class="secaoFormulario">
+                <h2>Cadastrar Turma</h2>
+
+                <div class="formularioContainer">
+                    <div class="formularioEsquerda">
+                        
+                        <input type="text" id="nomeTurma" name="nomeTurma" placeholder="NOME DA TURMA:">
+
+                       
+                        <input type="text" id="nomeInstrutor" name="nomeInstrutor" placeholder="NOME DO INSTRUTOR:">
+
+                        
+                        <input type="text" id="diasSemana" name="diasSemana" placeholder="DIAS DA SEMANA:">
+
+                        
+                        <input type="text" id="horario" name="horario" placeholder="HORARIO:">
+
+                        
+                        <input type="number" id="faixaEtaria" name="faixaEtaria" placeholder="FAIXA ETÁRIA:">
+
+                        <input type="number" id="capacidadeMaxima" name="capacidadeMaxima" placeholder="CAPACIDADE MAXIMA:">
+                    </div>
+
+                    <div class="formularioDireita">
+                        
+                        <select id="horarioTurma" name="horarioTurma">
+                            
+                            <option value="matutino">Horario:</option>
+                            <option value="vespertino">Matutino</option>
+                            <option value="vespertino">Vespertino</option>
+                            <option value="noturno">Noturno</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <button  class="botao"     type="submit">Cadastrar</button>
+</body>
+</html>

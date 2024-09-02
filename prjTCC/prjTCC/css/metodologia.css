@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #ff9797; */
+}
+
+header {
+    background-color: #005a92;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 50%;
+}
+
+.logo{
+    text-align: center;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin:15px;
+}
+
+.navbar .icon img {
+    width: 69%;
+}
+
+.metodologia{
+    text-align: center;
+    height: 44em;
+}
+
+.metodologia div{
+    padding: 2% 14% 0 14%;
+}
+
+.metodologia p, h3{
+    text-align: left;
+}
+
+h1 , h3{
+    color: #0E5D8C;
+}
+
+.footer {
+    background-color: #005a92;
+    color: #fff;
+    padding: 20px 14% 10px 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer img {
+    width: 6.31%;
+}
+
+.footer div {
+    text-align: left;
+}
+
+.footer .sociais {
+    display: flex;
+}
+
+.footer .sociais a {
+    margin: 0 10px;
+}
+
+.footer .sociais img {
+    width: 67%;   
+}
+
+.dados{
+    line-height: 1px;
+}
+
+@media screen and (max-width : 650px)
+{
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  .navbar .logo img {
+    width: 75%;
+  }
+
+  .navbar .icon img {
+    width: 111%;
+  }
+
+  .metodologia {
+    text-align: center;
+    height: 60em;
+}
+.footer div {
+    text-align: center;
+}
+.footer {
+    background-color: #005a92;
+    color: #fff;
+    padding: 20px 14% 10px 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer img {
+    width: 24%;
+}
+
+.footer .sociais {
+    display: flex;
+    padding: 4% 0px 0 0;
+}
+.dados {
+    line-height: 7px;
+}
+}

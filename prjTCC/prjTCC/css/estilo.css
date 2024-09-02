@@ -1,0 +1,400 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #ff9797; */
+}
+
+header {
+    background-color: #005a92;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 50%;
+}
+
+.logo{
+    text-align: center;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin:15px;
+}
+
+.navbar .icon img {
+    width: 69%;
+}
+
+.bem-vindo{
+    height: 45pc;
+}
+.bem-vindo img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.bem-vindo h1 {
+  color: #E5F2FA;
+  font-size: 3em;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 28pc;
+  padding-left: 42px;
+}
+
+.metodologia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.metodologia div {
+    max-width: 600px;
+    margin-right: 20px;
+}
+.metodologia h1 {
+    color: #1a4e94;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.metodologia p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.metodologia button {
+    background-color: #1a4e94;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.metodologia button:hover {
+    background-color: #163a6d;
+}
+
+.metodologia img {
+    border-radius: 23px;
+    width: 20%;
+    height: auto;
+}
+
+.modalidades {
+    background-image: url(../images/fundo\ .jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 5%;
+}
+
+.modalidade-item {
+    background-color: #1a4e94;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    padding: 20px;
+}
+
+.modalidade-item img {
+    width: 100%;
+    height: 262.2px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top
+}
+
+.modalidade-item p {
+    margin: 15px;
+    font-size: 1.2em;
+}
+
+.modalidade-item button {
+    background-color: #ffffff;
+    color: #1a4e94;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.modalidade-item button:hover {
+    background-color: #d9d9d9;
+}
+
+.professores {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.professores h2 {
+    font-size: 2em;
+    color: #1a4e94;
+    margin-bottom: 20px;
+}
+
+.professor-row {
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    flex-wrap: wrap;
+}
+
+.professor {
+    background-color: #abd5ef;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px
+}
+
+.professor img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0
+}  
+
+.professor p {
+    
+    color: #1a4e94;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.beneficios{
+    background-color: #005a92;
+    text-align: center;
+    padding: 0px 17% 0px 17%;
+}
+
+.beneficios h1 {
+    /* font-size: 2em; */
+    color: #E5F2FA;
+    margin-bottom: 20px;
+}
+
+.beneficios-row{
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    /* flex-wrap: wrap; */
+    padding-bottom: 11px;
+}
+
+.beneficios-item img{
+    width: 25%;
+}
+.beneficios-item p{
+    color: #ffffff;
+}
+
+.depoimentos div{
+    padding: 10px;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.depoimentos h1 {
+    color: #0454A3;
+}
+
+
+.depoimentos p {
+    padding: 0px 24% 0 24%;
+}
+
+.depoimentos .nome{
+    color: #0454A3;    
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #005a92;
+    color: #fff;
+    padding: 20px 14% 10px 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer img {
+    width: 6.31%;
+}
+
+.footer div {
+    text-align: left;
+}
+
+.footer .sociais {
+    display: flex;
+}
+
+.footer .sociais a {
+    margin: 0 10px;
+}
+
+.footer .sociais img {
+    width: 67%;   
+}
+
+.dados{
+    line-height: 1px;
+}
+
+
+/* ----------------------------------------------- MEDIA QUERY --------------------------------------------------- */
+@media screen and (max-width : 650px)
+{
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  .navbar .logo img {
+    width: 75%;
+  }
+
+  .navbar .icon img {
+    width: 111%;
+  }
+
+  .bem-vindo h1 {
+    color: #E5F2FA;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 7pc;
+    padding-left: 21px;
+  }
+
+  .bem-vindo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bem-vindo {
+    height: 10pc;
+  }
+
+  .metodologia img {
+    display: none;
+  }
+
+  .metodologia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .modalidades{
+    flex-direction: column
+  }
+  .modalidade-item img{
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .metodologia h1 {
+    color: #1a4e94;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .metodologia p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .metodologia div {
+    max-width: 600px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .metodologia button {
+    background-color: #1a4e94;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  .beneficios-row {
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    /* flex-wrap: wrap; */
+    padding-bottom: 11px;
+    flex-direction: column;
+  }
+
+  .depoimentos p {
+    padding: 0px 0% 0 0%; 
+  }
+
+  .footer div {
+        text-align: center;
+    }
+    .footer {
+        background-color: #005a92;
+        color: #fff;
+        padding: 20px 14% 10px 14%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer img {
+        width: 24%;
+    }
+
+    .footer .sociais {
+        display: flex;
+        padding: 4% 0px 0 0;
+    }
+    .dados {
+        line-height: 7px;
+    }
+    
+    
+}
+@media screen and (min-width : 651px) and (max-width:1000px) 
+{
+
+}
+  

@@ -1,0 +1,148 @@
+/* css/frequencia.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 128px;
+    left: 0px;
+    top: 0px;
+    padding: 0;
+    background: #0E5D8C;
+}
+
+.caixaLogo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.entrada {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 40px;
+}
+
+.entrada span {
+    margin-right: 10px;
+}
+
+.iconeUsers {
+    height: 45px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    margin-top: 128px; /* Adjusting margin to avoid overlap with the header */
+}
+
+.sidebar {
+    background-color: #d5e8f4;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 47px;
+    display: flex;
+    align-items: center;
+}
+
+/* .agenda {
+    width: 15%;
+} */
+
+.agenda {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.filter-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-section select, .filter-section input[type="date"] {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.buscar-button {
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buscar-button:hover {
+    background-color: darkgreen;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.attendance-table th,
+.attendance-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.attendance-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.save-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0E5D8C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-button:hover {
+    background-color: #0C4A73;
+}

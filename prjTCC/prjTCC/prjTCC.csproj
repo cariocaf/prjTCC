@@ -1,0 +1,426 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1A461C4-9F22-4287-A89C-4420F3EAE129}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>prjTCC</RootNamespace>
+    <AssemblyName>prjTCC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADM\cadastrarADM.html" />
+    <Content Include="ADM\CadastrarTurmaADM.html" />
+    <Content Include="ADM\calendarioADM.html" />
+    <Content Include="ADM\controleADM.html" />
+    <Content Include="ADM\css\cadastrar.css" />
+    <Content Include="ADM\css\cadastrarTurma.css" />
+    <Content Include="ADM\css\calendario.css" />
+    <Content Include="ADM\css\controle.css" />
+    <Content Include="ADM\css\dadosPessoais.css" />
+    <Content Include="ADM\css\Despesas.css" />
+    <Content Include="ADM\css\fatura.css" />
+    <Content Include="ADM\css\frequencia.css" />
+    <Content Include="ADM\css\turmaADM.css" />
+    <Content Include="ADM\DadosEmpresariaisADM.html" />
+    <Content Include="ADM\DespesasADM.html" />
+    <Content Include="ADM\FaturaADM.html" />
+    <Content Include="ADM\frequenciaADM.html" />
+    <Content Include="ADM\images\alice.jpg" />
+    <Content Include="ADM\images\andrey.jpg" />
+    <Content Include="ADM\images\auto_controle.png" />
+    <Content Include="ADM\images\de-volta.png" />
+    <Content Include="ADM\images\defesa.png" />
+    <Content Include="ADM\images\definir_corpo_feminino.jpg" />
+    <Content Include="ADM\images\definir_corpo_masculino.jpg" />
+    <Content Include="ADM\images\disciplina.png" />
+    <Content Include="ADM\images\duda.jpg" />
+    <Content Include="ADM\images\em-anexo.png" />
+    <Content Include="ADM\images\facebook.png" />
+    <Content Include="ADM\images\feminino.jpeg" />
+    <Content Include="ADM\images\feminino.jpg" />
+    <Content Include="ADM\images\fundo .jpg" />
+    <Content Include="ADM\images\header.jpeg" />
+    <Content Include="ADM\images\header.jpg" />
+    <Content Include="ADM\images\icon.png" />
+    <Content Include="ADM\images\icone.jpeg" />
+    <Content Include="ADM\images\icone.png" />
+    <Content Include="ADM\images\icones verde\agenda.png" />
+    <Content Include="ADM\images\icones verde\cadastro %281%29.png" />
+    <Content Include="ADM\images\icones verde\coin.png" />
+    <Content Include="ADM\images\icones verde\do-utilizador.png" />
+    <Content Include="ADM\images\icones verde\escreva.png" />
+    <Content Include="ADM\images\icones verde\receipt %281%29.png" />
+    <Content Include="ADM\images\icones verde\tablet %281%29.png" />
+    <Content Include="ADM\images\icones\agenda.png" />
+    <Content Include="ADM\images\icones\cadastro.png" />
+    <Content Include="ADM\images\icones\coin.png" />
+    <Content Include="ADM\images\icones\escreva.png" />
+    <Content Include="ADM\images\icones\exit.png" />
+    <Content Include="ADM\images\icones\people-together.png" />
+    <Content Include="ADM\images\icones\receipt.png" />
+    <Content Include="ADM\images\icones\tablet.png" />
+    <Content Include="ADM\images\icones\user.png" />
+    <Content Include="ADM\images\instagram.png" />
+    <Content Include="ADM\images\kids.jpeg" />
+    <Content Include="ADM\images\kids.jpg" />
+    <Content Include="ADM\images\livya.jpeg" />
+    <Content Include="ADM\images\livya.jpg" />
+    <Content Include="ADM\images\logo.png" />
+    <Content Include="ADM\images\masculino.jpeg" />
+    <Content Include="ADM\images\masculino.jpg" />
+    <Content Include="ADM\images\metodologia.jpg" />
+    <Content Include="ADM\images\musculo.jpg" />
+    <Content Include="ADM\images\peso.png" />
+    <Content Include="ADM\images\pitter.jpg" />
+    <Content Include="ADM\images\pix.jpg" />
+    <Content Include="ADM\images\qrcode.jpg" />
+    <Content Include="ADM\images\reinaldo.jpg" />
+    <Content Include="ADM\images\resistência.png" />
+    <Content Include="ADM\images\users\user.png" />
+    <Content Include="ADM\images\willan.jpg" />
+    <Content Include="ADM\jsAdm\calendarioADM.js" />
+    <Content Include="ADM\turmaADM.html" />
+    <Content Include="Aluno\calendarioALUNO.html" />
+    <Content Include="Aluno\css\calendarioAluno.css" />
+    <Content Include="Aluno\css\dadospessoaisAluno.css" />
+    <Content Include="Aluno\css\faturaAluno.css" />
+    <Content Include="Aluno\css\frequenciaAluno.css" />
+    <Content Include="Aluno\dadosPessoaisALUNO.html" />
+    <Content Include="Aluno\faturaALUNO.html" />
+    <Content Include="Aluno\frequenciaALUNO.html" />
+    <Content Include="Aluno\images\alice.jpg" />
+    <Content Include="Aluno\images\andrey.jpg" />
+    <Content Include="Aluno\images\auto_controle.png" />
+    <Content Include="Aluno\images\de-volta.png" />
+    <Content Include="Aluno\images\defesa.png" />
+    <Content Include="Aluno\images\definir_corpo_feminino.jpg" />
+    <Content Include="Aluno\images\definir_corpo_masculino.jpg" />
+    <Content Include="Aluno\images\disciplina.png" />
+    <Content Include="Aluno\images\duda.jpg" />
+    <Content Include="Aluno\images\em-anexo.png" />
+    <Content Include="Aluno\images\evento %282%29.jpeg" />
+    <Content Include="Aluno\images\evento.jpeg" />
+    <Content Include="Aluno\images\facebook.png" />
+    <Content Include="Aluno\images\feminino.jpeg" />
+    <Content Include="Aluno\images\feminino.jpg" />
+    <Content Include="Aluno\images\fundo .jpg" />
+    <Content Include="Aluno\images\header.jpeg" />
+    <Content Include="Aluno\images\header.jpg" />
+    <Content Include="Aluno\images\icon.png" />
+    <Content Include="Aluno\images\icone.jpeg" />
+    <Content Include="Aluno\images\icone.png" />
+    <Content Include="Aluno\images\icones verde\agenda.png" />
+    <Content Include="Aluno\images\icones verde\cadastro %281%29.png" />
+    <Content Include="Aluno\images\icones verde\coin.png" />
+    <Content Include="Aluno\images\icones verde\escreva.png" />
+    <Content Include="Aluno\images\icones verde\receipt %281%29.png" />
+    <Content Include="Aluno\images\icones verde\tablet %281%29.png" />
+    <Content Include="Aluno\images\icones\agenda.png" />
+    <Content Include="Aluno\images\icones\cadastro.png" />
+    <Content Include="Aluno\images\icones\coin.png" />
+    <Content Include="Aluno\images\icones\escreva.png" />
+    <Content Include="Aluno\images\icones\exit.png" />
+    <Content Include="Aluno\images\icones\people-together.png" />
+    <Content Include="Aluno\images\icones\receipt.png" />
+    <Content Include="Aluno\images\icones\tablet.png" />
+    <Content Include="Aluno\images\icones\user.png" />
+    <Content Include="Aluno\images\instagram.png" />
+    <Content Include="Aluno\images\kids.jpeg" />
+    <Content Include="Aluno\images\kids.jpg" />
+    <Content Include="Aluno\images\livya.jpeg" />
+    <Content Include="Aluno\images\livya.jpg" />
+    <Content Include="Aluno\images\logo.png" />
+    <Content Include="Aluno\images\masculino.jpeg" />
+    <Content Include="Aluno\images\masculino.jpg" />
+    <Content Include="Aluno\images\metodologia.jpg" />
+    <Content Include="Aluno\images\musculo.jpg" />
+    <Content Include="Aluno\images\peso.png" />
+    <Content Include="Aluno\images\pitter.jpg" />
+    <Content Include="Aluno\images\pix.jpg" />
+    <Content Include="Aluno\images\qrcode.jpg" />
+    <Content Include="Aluno\images\reinaldo.jpg" />
+    <Content Include="Aluno\images\resistência.png" />
+    <Content Include="Aluno\images\users\user.png" />
+    <Content Include="Aluno\images\willan.jpg" />
+    <Content Include="Aluno\js\calendarioaluno.js" />
+    <Content Include="Aluno\js\faturaaluno.js" />
+    <Content Include="css\doacoes.css" />
+    <Content Include="css\estilo.css" />
+    <Content Include="css\feminino.css" />
+    <Content Include="css\kids.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\masculino.css" />
+    <Content Include="css\metodologia.css" />
+    <Content Include="css\premios.css" />
+    <Content Include="css\redifinirsenha.css" />
+    <Content Include="doacoes.aspx" />
+    <Content Include="feminino.aspx" />
+    <Content Include="images\alice.jpg" />
+    <Content Include="images\andrey.jpg" />
+    <Content Include="images\auto_controle.png" />
+    <Content Include="images\de-volta.png" />
+    <Content Include="images\defesa.png" />
+    <Content Include="images\definir_corpo_feminino.jpg" />
+    <Content Include="images\definir_corpo_masculino.jpg" />
+    <Content Include="images\disciplina.png" />
+    <Content Include="images\duda.jpg" />
+    <Content Include="images\em-anexo.png" />
+    <Content Include="images\evento %282%29.jpeg" />
+    <Content Include="images\evento.jpeg" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\feminino.jpeg" />
+    <Content Include="images\feminino.jpg" />
+    <Content Include="images\fundo .jpg" />
+    <Content Include="images\header.jpeg" />
+    <Content Include="images\header.jpg" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\icone.jpeg" />
+    <Content Include="images\icone.png" />
+    <Content Include="images\icones verde\agenda.png" />
+    <Content Include="images\icones verde\cadastro %281%29.png" />
+    <Content Include="images\icones verde\coin.png" />
+    <Content Include="images\icones verde\escreva.png" />
+    <Content Include="images\icones verde\receipt %281%29.png" />
+    <Content Include="images\icones verde\tablet %281%29.png" />
+    <Content Include="images\icones\agenda.png" />
+    <Content Include="images\icones\cadastro.png" />
+    <Content Include="images\icones\coin.png" />
+    <Content Include="images\icones\escreva.png" />
+    <Content Include="images\icones\exit.png" />
+    <Content Include="images\icones\people-together.png" />
+    <Content Include="images\icones\receipt.png" />
+    <Content Include="images\icones\tablet.png" />
+    <Content Include="images\icones\user.png" />
+    <Content Include="images\icons8-facebook-48.png" />
+    <Content Include="images\icons8-facebook-novo-48.png" />
+    <Content Include="images\icons8-instagram-48.png" />
+    <Content Include="images\instagram.png" />
+    <Content Include="images\kids.jpeg" />
+    <Content Include="images\kids.jpg" />
+    <Content Include="images\livya.jpeg" />
+    <Content Include="images\livya.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\masculino.jpeg" />
+    <Content Include="images\masculino.jpg" />
+    <Content Include="images\metodologia.jpg" />
+    <Content Include="images\musculo.jpg" />
+    <Content Include="images\peso.png" />
+    <Content Include="images\pitter.jpg" />
+    <Content Include="images\pix.jpg" />
+    <Content Include="images\qrcode.jpg" />
+    <Content Include="images\reinaldo.jpg" />
+    <Content Include="images\resistência.png" />
+    <Content Include="images\users\user.png" />
+    <Content Include="images\willan.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="kids.aspx" />
+    <Content Include="login.html" />
+    <Content Include="masculino.html" />
+    <Content Include="metodologia.html" />
+    <Content Include="premios.html" />
+    <Content Include="Professor\calendarioProfessor.html" />
+    <Content Include="Professor\css\calendarioProfessor.css" />
+    <Content Include="Professor\css\dadosPessoais.css" />
+    <Content Include="Professor\css\Despesas.css" />
+    <Content Include="Professor\css\evento.css" />
+    <Content Include="Professor\css\frequencia.css" />
+    <Content Include="Professor\css\turmaADM.css" />
+    <Content Include="Professor\dadosEmpresariaisProfessor.html" />
+    <Content Include="Professor\dadosMensaisProfessor.html" />
+    <Content Include="Professor\eventoProfessor.html" />
+    <Content Include="Professor\eventosProfessor.html" />
+    <Content Include="Professor\frequenciaProfessor.html" />
+    <Content Include="Professor\images\alice.jpg" />
+    <Content Include="Professor\images\andrey.jpg" />
+    <Content Include="Professor\images\auto_controle.png" />
+    <Content Include="Professor\images\de-volta.png" />
+    <Content Include="Professor\images\defesa.png" />
+    <Content Include="Professor\images\definir_corpo_feminino.jpg" />
+    <Content Include="Professor\images\definir_corpo_masculino.jpg" />
+    <Content Include="Professor\images\disciplina.png" />
+    <Content Include="Professor\images\duda.jpg" />
+    <Content Include="Professor\images\em-anexo.png" />
+    <Content Include="Professor\images\facebook.png" />
+    <Content Include="Professor\images\feminino.jpeg" />
+    <Content Include="Professor\images\feminino.jpg" />
+    <Content Include="Professor\images\fundo .jpg" />
+    <Content Include="Professor\images\header.jpeg" />
+    <Content Include="Professor\images\header.jpg" />
+    <Content Include="Professor\images\icon.png" />
+    <Content Include="Professor\images\icone.jpeg" />
+    <Content Include="Professor\images\icone.png" />
+    <Content Include="Professor\images\icones verde\agenda.png" />
+    <Content Include="Professor\images\icones verde\cadastro %281%29.png" />
+    <Content Include="Professor\images\icones verde\coin.png" />
+    <Content Include="Professor\images\icones verde\escreva.png" />
+    <Content Include="Professor\images\icones verde\receipt %281%29.png" />
+    <Content Include="Professor\images\icones verde\tablet %281%29.png" />
+    <Content Include="Professor\images\icones\agenda.png" />
+    <Content Include="Professor\images\icones\cadastro.png" />
+    <Content Include="Professor\images\icones\coin.png" />
+    <Content Include="Professor\images\icones\escreva.png" />
+    <Content Include="Professor\images\icones\exit.png" />
+    <Content Include="Professor\images\icones\people-together.png" />
+    <Content Include="Professor\images\icones\receipt.png" />
+    <Content Include="Professor\images\icones\tablet.png" />
+    <Content Include="Professor\images\icones\user.png" />
+    <Content Include="Professor\images\instagram.png" />
+    <Content Include="Professor\images\kids.jpeg" />
+    <Content Include="Professor\images\kids.jpg" />
+    <Content Include="Professor\images\livya.jpeg" />
+    <Content Include="Professor\images\livya.jpg" />
+    <Content Include="Professor\images\logo.png" />
+    <Content Include="Professor\images\masculino.jpeg" />
+    <Content Include="Professor\images\masculino.jpg" />
+    <Content Include="Professor\images\metodologia.jpg" />
+    <Content Include="Professor\images\musculo.jpg" />
+    <Content Include="Professor\images\peso.png" />
+    <Content Include="Professor\images\pitter.jpg" />
+    <Content Include="Professor\images\pix.jpg" />
+    <Content Include="Professor\images\qrcode.jpg" />
+    <Content Include="Professor\images\reinaldo.jpg" />
+    <Content Include="Professor\images\resistência.png" />
+    <Content Include="Professor\images\users\user.png" />
+    <Content Include="Professor\images\willan.jpg" />
+    <Content Include="Professor\turmaProfessor.html" />
+    <Content Include="redefinirSenha.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="doacoes.aspx.cs">
+      <DependentUpon>doacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doacoes.aspx.designer.cs">
+      <DependentUpon>doacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feminino.aspx.cs">
+      <DependentUpon>feminino.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feminino.aspx.designer.cs">
+      <DependentUpon>feminino.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kids.aspx.cs">
+      <DependentUpon>kids.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kids.aspx.designer.cs">
+      <DependentUpon>kids.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50078</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50078/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed; 
+    width: 100%;
+    height: 128px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background: #0E5D8C;
+    z-index: 1000; 
+}
+
+.caixaLogo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+    margin-left: 40px;
+}
+
+.entrada {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 40px;
+}
+
+.entrada span {
+    margin-right: 10px;
+}
+
+.iconeUsers {
+    height: 45px;
+}
+
+nav.sidebar {
+    background-color: #d5e8f4;
+    width: 220px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 128px; 
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 900; 
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.sidebar ul li {
+    margin-bottom: 20%; 
+    display: flex;
+    align-items: center;
+}
+
+.agenda {
+    width: 27px;
+    height: 27px;
+    margin-right: 16px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+main.main-content {
+    padding: 20px;
+    margin-left: 220px; 
+    margin-top: 128px; 
+    overflow: auto; 
+}
+
+h1 {
+    font-size: 24px;
+    color: #0E5D8C;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+}
+
+.address-title {
+    margin-left: 0;
+    width: 100%;
+    max-width: 900px; 
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-section {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #020202;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0E5D8C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #094d71;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 900px; 
+}
+
+
+.progress-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: 180px;
+}
+
+.progress-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.progress-message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.progress-detail {
+    font-size: 14px;
+    color: #666;
+}
+
+.progress-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-chart {
+    width: 100px;
+    height: 100px;
+}
+
+.circle-bg {
+    stroke: #e6e6e6;
+    stroke-width: 3.8;
+    fill: none;
+}
+
+.circle {
+    stroke: #4caf50; 
+    stroke-width: 3.8;
+    fill: none;
+    stroke-dasharray: 50, 100;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.percentage {
+    font-size: 18px;
+    -o-table-baseline: middle;
+    text-anchor: middle;
+}
