@@ -273,18 +273,18 @@
     <Content Include="images\willan.jpg" />
     <Content Include="index.aspx" />
     <Content Include="kids.aspx" />
-    <Content Include="login.html" />
-    <Content Include="masculino.html" />
-    <Content Include="metodologia.html" />
-    <Content Include="premios.html" />
-    <Content Include="Professor\calendarioProfessor.html" />
+    <Content Include="login.aspx" />
+    <Content Include="masculino.aspx" />
+    <Content Include="metodologia.aspx" />
+    <Content Include="premios.aspx" />
+    <Content Include="Professor\calendarioProfessor.aspx" />
     <Content Include="Professor\css\calendarioProfessor.css" />
     <Content Include="Professor\css\dadosPessoais.css" />
     <Content Include="Professor\css\Despesas.css" />
     <Content Include="Professor\css\evento.css" />
     <Content Include="Professor\css\frequencia.css" />
     <Content Include="Professor\css\turmaADM.css" />
-    <Content Include="Professor\dadosEmpresariaisProfessor.html" />
+    <Content Include="Professor\dadosEmpresariasProfessor.aspx" />
     <Content Include="Professor\dadosMensaisProfessor.html" />
     <Content Include="Professor\eventoProfessor.html" />
     <Content Include="Professor\eventosProfessor.html" />
@@ -342,7 +342,7 @@
     <Content Include="Professor\images\users\user.png" />
     <Content Include="Professor\images\willan.jpg" />
     <Content Include="Professor\turmaProfessor.html" />
-    <Content Include="redefinirSenha.html" />
+    <Content Include="redefinirSenha.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -374,7 +374,56 @@
     <Compile Include="kids.aspx.designer.cs">
       <DependentUpon>kids.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masculino.aspx.cs">
+      <DependentUpon>masculino.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masculino.aspx.designer.cs">
+      <DependentUpon>masculino.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="metodologia.aspx.cs">
+      <DependentUpon>metodologia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="metodologia.aspx.designer.cs">
+      <DependentUpon>metodologia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="premios.aspx.cs">
+      <DependentUpon>premios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="premios.aspx.designer.cs">
+      <DependentUpon>premios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Professor\calendarioProfessor.aspx.cs">
+      <DependentUpon>calendarioProfessor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professor\calendarioProfessor.aspx.designer.cs">
+      <DependentUpon>calendarioProfessor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Professor\dadosEmpresariasProfessor.aspx.cs">
+      <DependentUpon>dadosEmpresariasProfessor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professor\dadosEmpresariasProfessor.aspx.designer.cs">
+      <DependentUpon>dadosEmpresariasProfessor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="redefinirSenha.aspx.cs">
+      <DependentUpon>redefinirSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redefinirSenha.aspx.designer.cs">
+      <DependentUpon>redefinirSenha.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

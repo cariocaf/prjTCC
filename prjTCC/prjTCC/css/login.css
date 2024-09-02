@@ -15,7 +15,7 @@ main {
     max-width: 1200px;
     height: 80%;
     background-color: white;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
 }
 
 .login {
@@ -28,18 +28,17 @@ main {
     background-color: #f4f4f4;
 }
 
-.login img {
-    width: 25%;
-}
+    .login img {
+        width: 25%;
+    }
 
-.login h1 {
-    margin-bottom: 30px;
-    font-size: 24px;
-    color: #0e5d8c;
-}
+    .login h1 {
+        margin-bottom: 30px;
+        font-size: 24px;
+        color: #0e5d8c;
+    }
 
-.login input[type="email"],
-.login input[type="password"] {
+.login-input {
     width: 100%;
     max-width: 300px;
     padding: 10px;
@@ -55,7 +54,7 @@ main {
     font-size: 12px;
 }
 
-.login button {
+.login-button {
     width: 50%;
     max-width: 50%;
     padding: 10px;
@@ -67,42 +66,37 @@ main {
     cursor: pointer;
 }
 
-.login button:hover {
-    background-color: #0056b3;
-}
-
-.login div{
-    display: contents;
-}
+    .login-button:hover {
+        background-color: #0056b3;
+    }
 
 .foto {
     flex: 1;
 }
 
-.foto img{
-    width: 123%;
-}
+    .foto img {
+        width: 123%;
+    }
 
-.voltar img{
+.voltar img {
     width: 5%;
     position: relative;
     bottom: 8vw;
 }
 
 /* ----------------------------------------------- MEDIA QUERY --------------------------------------------------- */
-@media screen and (max-width : 650px)
-{
-    .foto img 
-    {
+@media screen and (max-width : 650px) {
+    .foto img {
         display: none;
     }
+
     .foto {
         flex: 0;
     }
+
     .voltar img {
         width: 10%;
         position: relative;
         bottom: 29vw;
     }
-   
 }

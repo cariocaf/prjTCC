@@ -1,13 +1,17 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="calendarioProfessor.aspx.cs" Inherits="prjTCC.Professor.calendarioProfessor" %>
+
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/calendarioProfessor.css">
     <title>Calendário</title>
 </head>
 <body>
-    <header class="cabecalho">
+    <form id="form1" runat="server">
+<header class="cabecalho">
         <div class="caixaLogo">
             <img src="images/logo.png" alt="Logo" class="logo">
         </div>
@@ -76,5 +80,6 @@
             </div>
         </div>
     </div>
+    </form>
 </body>
 </html>
