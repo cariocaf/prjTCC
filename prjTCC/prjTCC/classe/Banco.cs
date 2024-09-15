@@ -179,7 +179,7 @@ public class Banco
             command.Parameters.AddWithValue("@nm_senha_usuario", senha);
 
             try
-            {
+            {                           
                 connection.Open();
                 var result = command.ExecuteScalar();
                 if (result != null)
