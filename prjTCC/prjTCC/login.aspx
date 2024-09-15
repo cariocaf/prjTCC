@@ -24,7 +24,7 @@
                     <a href="redefinirSenha.aspx">
                         <p>ESQUECI MINHA SENHA</p>
                     </a>
-                    <asp:Button ID="btnEntrar" runat="server" CssClass="login-button" Text="Entrar" />
+                    <asp:Button ID="btnEntrar" runat="server" CssClass="login-button" Text="Entrar" onclick="btnEntrar_Click"/>
                 </div>
             </section>
 

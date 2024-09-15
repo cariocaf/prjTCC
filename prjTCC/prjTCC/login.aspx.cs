@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using MySql.Data.MySqlClient;
 
 namespace prjTCC
 {
@@ -12,6 +8,42 @@ namespace prjTCC
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnEntrar_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail.Text.Trim();
+            string senha = txtSenha.Text.Trim();
+
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
+            {
+                Response.Write("<script>alert('Por favor, preencha todos os campos.');</script>");
+                return;
+            }
+
+            Banco banco = new Banco();
+            int tipoUsuario = banco.ValidarUsuario(email, senha);
+
+            string redirecionamentoUrl = string.Empty;
+
+            switch (tipoUsuario)
+            {
+                case 1:
+                    redirecionamentoUrl = "adm/cadastrarADM.html";
+                    break;
+                case 2:
+                    redirecionamentoUrl = "Professor/calendarioProfessor.aspx";
+                    break;
+                case 3:
+                    redirecionamentoUrl = "Aluno/calendarioALUNO.html";
+                    break;
+                default:
+                    Response.Write("<script>alert('Tipo de usuário não reconhecido.');</script>");
+                    return;
+            }
+
+            Response.Redirect(redirecionamentoUrl);
+            Console.WriteLine("Redirecionamento para: " + redirecionamentoUrl);
         }
     }
 }
