@@ -21,6 +21,7 @@
                 Defina uma senha segura para ter um acesso a nossa academia.</p>
 
                 <div>
+                    <asp:Label ID="Label1" runat="server" Text="Digite Seu Email:"></asp:Label>
                    <asp:TextBox ID="txtEmailR" runat="server"></asp:TextBox>
                     <div class="centralizar">
                         <asp:Button ID="btnEnviarEmail" runat="server" Text="Enviar" OnClick="btnEnviarEmail_Click" />

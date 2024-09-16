@@ -38,7 +38,7 @@ namespace prjTCC
                 return;
             }
 
-            litMSG.Text = "";
+            litMSG.Text = "Email Enviado Com sucesso, verifique sua caixa de email!";
             btnEnviarEmail.Enabled = false;
             txtEmailR.Enabled = false;
 

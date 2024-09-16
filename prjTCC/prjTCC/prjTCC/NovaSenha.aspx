@@ -19,7 +19,9 @@
             <p>Informe sua nova senha.</p>
 
                 <div>
+                    <asp:Label ID="Label1" runat="server" Text="Digite a senha:"></asp:Label>
                     <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label2" runat="server" Text="Confirme a senha:"></asp:Label>
                     <asp:TextBox ID="txtConfirmarSenha" runat="server"></asp:TextBox>
                     <div class="centralizar">
                         <asp:Button ID="btnConfirmar" runat="server" Text="Confirmar Senha" OnClick="btnConfirmar_Click" />
