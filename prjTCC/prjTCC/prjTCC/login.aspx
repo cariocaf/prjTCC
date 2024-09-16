@@ -32,6 +32,7 @@
                 <asp:Image ID="imgFoto" runat="server" ImageUrl="~/images/feminino.jpeg" />
             </section>
         </main>
+        <asp:Literal ID="litMensagem" runat="server"></asp:Literal>
     </form>
 </body>
 </html>

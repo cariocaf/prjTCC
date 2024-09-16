@@ -327,6 +327,7 @@
     <Content Include="login.aspx" />
     <Content Include="masculino.aspx" />
     <Content Include="metodologia.aspx" />
+    <Content Include="NovaSenha.aspx" />
     <Content Include="premios.aspx" />
     <Content Include="Professor\calendarioProfessor.aspx" />
     <Content Include="Professor\css\calendarioProfessor.css" />
@@ -398,6 +399,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classe\Banco.cs" />
+    <Compile Include="classe\Usuario.cs" />
+    <Compile Include="classe\Usuarios.cs" />
     <Compile Include="doacoes.aspx.cs">
       <DependentUpon>doacoes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -446,6 +449,13 @@
     </Compile>
     <Compile Include="metodologia.aspx.designer.cs">
       <DependentUpon>metodologia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NovaSenha.aspx.cs">
+      <DependentUpon>NovaSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NovaSenha.aspx.designer.cs">
+      <DependentUpon>NovaSenha.aspx</DependentUpon>
     </Compile>
     <Compile Include="premios.aspx.cs">
       <DependentUpon>premios.aspx</DependentUpon>

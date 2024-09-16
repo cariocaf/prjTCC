@@ -21,11 +21,10 @@
                 Defina uma senha segura para ter um acesso a nossa academia.</p>
 
                 <div>
-                    <input type="email" placeholder="Email:">
-                    <input type="password" placeholder="Nova Senha:">
-                    <input type="password" placeholder="Confimar Senha">
+                   <asp:TextBox ID="txtEmailR" runat="server"></asp:TextBox>
                     <div class="centralizar">
-                        <button>Confimar Senha</button>
+                        <asp:Button ID="btnEnviarEmail" runat="server" Text="Enviar" OnClick="btnEnviarEmail_Click" />
+                        <asp:Literal ID="litMSG" runat="server"></asp:Literal>
                     </div>
                 </div>
         </section>

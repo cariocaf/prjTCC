@@ -186,6 +186,8 @@ public class Banco
                 {
                     tipoUsuario = Convert.ToInt32(result);
                 }
+
+
             }
             catch (Exception ex)
             {

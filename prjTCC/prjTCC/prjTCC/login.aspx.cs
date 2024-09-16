@@ -23,9 +23,21 @@ namespace prjTCC
 
             Banco banco = new Banco();
             int tipoUsuario = banco.ValidarUsuario(email, senha);
-
             string redirecionamentoUrl = string.Empty;
-
+            
+            if (tipoUsuario <= 0)
+            {
+                litMensagem.Text = "Usuario Não identificado, login ou senha invalidos!";
+                return;
+            }
+            else
+            {
+                if(tipoUsuario >= 4)
+                {
+                    litMensagem.Text = "Usuario Não identificado, login ou senha invalidos!";
+                    return;
+                }
+            }
             switch (tipoUsuario)
             {
                 case 1:
@@ -41,6 +53,7 @@ namespace prjTCC
                     Response.Write("<script>alert('Tipo de usuário não reconhecido.');</script>");
                     return;
             }
+
 
             Response.Redirect(redirecionamentoUrl);
             Console.WriteLine("Redirecionamento para: " + redirecionamentoUrl);
