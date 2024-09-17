@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace prjTCC.Professor
+namespace TCCacademia.PROFESSOR
 {
-    public partial class calendarioProfessor : System.Web.UI.Page
+    public partial class calendarioPROFESSOR : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

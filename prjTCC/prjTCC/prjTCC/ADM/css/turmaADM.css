@@ -47,11 +47,11 @@ nav.sidebar {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 128px; 
+    top: 128px;
     bottom: 0;
     left: 0;
     overflow-y: auto;
-    z-index: 900; 
+    z-index: 900;
 }
 
 .sidebar ul {
@@ -60,16 +60,14 @@ nav.sidebar {
     margin-top: 16px;
 }
 
-.sidebar ul li {
-    margin-bottom: 32px;
-    display: flex;
-    align-items: center;
-}
+    .sidebar ul li {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+    }
 
-.agenda {
-    width: 34px;
-    height: 34px;
-    margin-right: 16px;
+.icone {
+    width: 15%;
 }
 
 .sidebar ul li a {
@@ -78,6 +76,7 @@ nav.sidebar {
     font-weight: bold;
     display: flex;
     align-items: center;
+    margin-left: 8%;
 }
 
 .container {

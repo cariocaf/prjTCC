@@ -7,11 +7,11 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace prjTCC.Professor
+namespace TCCacademia.PROFESSOR
 {
 
 
-    public partial class calendarioProfessor
+    public partial class calendarioPROFESSOR
     {
 
         /// <summary>

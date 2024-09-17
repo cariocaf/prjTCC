@@ -144,7 +144,7 @@ h2 {
     box-shadow: none;
 }
 
-button {
+.button {
     padding: 10px 20px;
     background-color: #0E5D8C;
     color: white;
@@ -154,7 +154,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: #094d71;
 }
 
@@ -173,6 +173,61 @@ button:hover {
     justify-content: flex-start;
     width: 100%;
     max-width: 900px; 
+}
+
+.menu{
+    display:none;
+}
+@media screen and (max-width : 650px)
+{
+    .sidebar{
+        display:none;
+      }
+      .form-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* gap: 20px; */
+        flex-direction: column;
+    }
+    main.main-content {
+        padding: 20px;
+        margin-left: 0px;
+        margin-top: 128px;
+        overflow: auto;
+    }
+    .form-group input, .form-group select {
+        width: 99%;
+        border: none;
+        border-bottom: 2px solid #020202;
+        padding: 6px;
+        font-size: 14px;
+        border-radius: 0;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .menu {
+        display: inherit;
+        width: 10%;
+        margin-left: 15px;
+    }
+
+    .iconeUsers{
+        display:none;
+    }
+    .logo {
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    .entrada {
+        display: flex;
+        color: white;
+        align-items: center;
+    }
+    
+    
 }
 
 

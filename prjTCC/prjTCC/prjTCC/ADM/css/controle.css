@@ -6,14 +6,14 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    position: fixed; 
+    position: fixed;
     width: 100%;
     height: 128px;
     top: 0;
     left: 0;
     padding: 0;
     background: #0E5D8C;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .caixaLogo {
@@ -33,9 +33,9 @@ body {
     margin-right: 40px;
 }
 
-.entrada span {
-    margin-right: 10px;
-}
+    .entrada span {
+        margin-right: 10px;
+    }
 
 .iconeUsers {
     height: 45px;
@@ -47,11 +47,11 @@ nav.sidebar {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 128px; 
+    top: 128px;
     bottom: 0;
     left: 0;
     overflow-y: auto;
-    z-index: 900; 
+    z-index: 900;
 }
 
 .sidebar ul {
@@ -60,47 +60,44 @@ nav.sidebar {
     margin-top: 16px;
 }
 
-.sidebar ul li {
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-}
+    .sidebar ul li {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+    }
 
 .icone {
     width: 15%;
 }
 
 .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
     font-weight: bold;
     display: flex;
     align-items: center;
     margin-left: 8%;
 }
 
-
 .container {
     display: flex;
-    flex: 1;
-}
-
-
-.content {
-    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 240px; /* Espaço suficiente para a sidebar */
+    margin-top: 128px; /* Espaço suficiente para o header */
     padding: 20px;
-    margin-top: 10%;
 }
 
 .controle-filtros {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
-    margin-left: 15%;
 }
 
-.controle-filtros select {
-    padding: 10px;
-    font-size: 14px;
-}
+    .controle-filtros select {
+        padding: 10px;
+        font-size: 14px;
+    }
 
 .btn-buscar {
     padding: 10px 20px;
@@ -114,8 +111,8 @@ nav.sidebar {
     background: #f5f5f5;
     padding: 20px;
     border-radius: 8px;
-    width: 80%;
-    margin-left: 15%;
+    width: 100%; /* Ajustado para 100% da largura da área central */
+    max-width: 1200px; /* Limita a largura máxima */
 }
 
 .tabela h2 {

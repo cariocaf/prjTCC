@@ -41,56 +41,53 @@ body {
     height: 45px;
 }
 
-nav.sidebar {
+.barra-lateral {
     background-color: #d5e8f4;
-    width: 220px;
+    width: 250px;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     position: fixed;
     top: 128px; 
     bottom: 0;
-    left: 0;
     overflow-y: auto;
-    z-index: 900; 
 }
 
-.sidebar ul {
+.barra-lateral ul {
     list-style: none;
     padding: 0;
-    margin-top: 16px;
+    margin: 0;
 }
 
-.sidebar ul li {
-    margin-bottom: 20px; 
+.barra-lateral ul li {
+    margin-bottom: 47px;
     display: flex;
-    align-items: center;
 }
 
-.agenda {
-    width: 24px;
-    height: 24px;
-    margin-right: 16px;
+.icone {
+    width: 15%;
 }
 
-.sidebar ul li a {
+.barra-lateral ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     display: flex;
     align-items: center;
+    margin-left: 20px;
 }
 
 main.main-content {
     padding: 20px;
-    margin-left: 220px; 
-    margin-top: 128px; 
-    overflow: auto; 
+    margin-left: 622px;
+    margin-top: 128px;
+    overflow: auto;
 }
 
 h1 {
     font-size: 24px;
     color: #0E5D8C;
     text-align: center;
+    margin-left: -42%;
 }
 
 h2 {
@@ -183,7 +180,7 @@ button:hover {
     margin-top: 20px;
     width: 100%;
     max-width: 900px;
-    margin-left: 374px;
+    margin-left: 0px;
 }
 
 .progress-details {
@@ -232,4 +229,99 @@ button:hover {
 .percentage {
     font-size: 18px;
     text-anchor: middle; 
+}
+
+
+.menu{
+    width: 7%;
+    margin-left: 5%;
+    display:none;
+}
+
+
+/* Estilo para telas com largura máxima de 768px (tablets) */
+@media (max-width: 768px) {
+   .menu{
+    width: 9%;
+   }
+
+   .header {
+    /*flex-direction: column; */
+    align-items: center;
+    height: auto;
+    /* padding: 10px 20px;*/
+}
+
+.caixaLogo {
+        /* justify-content: space-between; */
+        width: 100%;
+        padding: 10px 0;
+        margin-left: -3%;
+
+}
+
+.entrada span{
+    margin-right: -305px;
+    margin-left: -220px;
+}
+
+.logo {
+    height: 45px;
+    margin-left: 5px;
+}
+
+.iconeUsers{
+    display: none;
+}
+   
+    .barra-lateral{
+    display: none;
+   }
+
+    main.main-content {
+        margin-left: 0;
+        margin-top: 60px;
+        padding: 10px;
+    }
+
+    .form-section {
+        width: 100%;
+        max-width: none;
+    }
+
+    .progress-section {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .progress-chart {
+        margin-top: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 95%;
+    }
+
+    .form-footer {
+        justify-content: center;
+    }
+}
+
+/* Estilo para telas com largura máxima de 480px (smartphones) */
+@media (max-width: 480px) {
+    
+
+    .progress-chart {
+        width: 80px;
+        height: 80px;
+    }
+
+    .percentage {
+        font-size: 16px;
+    }
 }

@@ -35,6 +35,7 @@ body {
     align-items: center;
     color: white;
     margin-right: 40px;
+    flex-direction: row-reverse;
 }
 
 .entrada span {
@@ -235,3 +236,99 @@ main {
     border-radius: 5px;
     margin-left: 10px;
 }
+
+.menu{
+    width: 7%;
+    margin-left: 5%;
+}
+
+
+
+/*---------------------------------------------------------------MEDIA QUERRY-------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    .menu{
+     width: 9%;
+    }
+ 
+    .header {
+     /*flex-direction: column; */
+     align-items: center;
+     height: auto;
+     /* padding: 10px 20px;*/
+ }
+ 
+ .caixaLogo {
+         /* justify-content: space-between; */
+         width: 100%;
+         padding: 10px 0;
+         margin-left: -3%;
+ 
+ }
+ 
+ .entrada span{
+     margin-right: -305px;
+     margin-left: -220px;
+ }
+ 
+ .logo {
+     height: 45px;
+     margin-left: 5px;
+ }
+ 
+ .iconeUsuarios{
+     display: none;
+ }
+    
+     .barra-lateral{
+     display: none;
+    }
+ 
+     main.main-content {
+         margin-left: 0;
+         /* margin-top: 60px; */
+         padding: 10px;
+     }
+ 
+     .conteudo{
+        flex: 1;
+        /* padding: 20px; */
+        margin-left: -14px;
+        /* margin-top: 20px; */
+        /* overflow: hidden;*/
+    }
+
+    .header-dia{
+        font-weight: bold;
+        background-color: #0E5D8C;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .grade-calendario{
+        display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    }
+}
+ 
+ 
+ 
+ /* Estilo para telas com largura máxima de 480px (smartphones) */
+ @media (max-width: 480px) {
+     
+ 
+     .progress-chart {
+         width: 80px;
+         height: 80px;
+     }
+ 
+     .percentage {
+         font-size: 16px;
+     }
+ }
+ 

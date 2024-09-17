@@ -83,15 +83,16 @@ nav.sidebar {
 
 main.main-content {
     padding: 20px;
-    margin-left: 220px; 
-    margin-top: 128px; 
-    overflow: auto; 
+    margin-left: 30%;
+    margin-top: 201px;
+    overflow: auto;
 }
 
 h1 {
     font-size: 24px;
     color: #0E5D8C;
     text-align: center;
+    margin-left: -31%;
 }
 
 h2 {
@@ -176,5 +177,33 @@ button:hover {
     max-width: 900px;
     gap: 5px;
 }
-
+@media screen and (max-width : 650px)
+{
+  .sidebar{
+    display:none;
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    flex-direction: column;
+}
+main.main-content {
+    padding: 20px;
+    margin-left: 0px;
+    margin-top: 128px;
+    overflow: auto;
+}
+.form-group input, .form-group select {
+    width: 99%;
+    border: none;
+    border-bottom: 2px solid #020202;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+}
 

@@ -52,12 +52,16 @@ body {
     width: 250px;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 128px; 
+    bottom: 0;
+    overflow-y: auto;
 }
 
 .barra-lateral ul {
     list-style: none;
     padding: 0;
-    margin-top: 144px;
+    margin: 0;
 }
 
 .barra-lateral ul li {
