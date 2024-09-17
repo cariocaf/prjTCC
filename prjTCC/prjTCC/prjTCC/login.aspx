@@ -25,16 +25,14 @@
                         <p>ESQUECI MINHA SENHA</p>
                     </a>
                     <asp:Button ID="btnEntrar" runat="server" CssClass="login-button" Text="Entrar" onclick="btnEntrar_Click"/>
-                    <br />
-                     <asp:Literal ID="litMensagem" runat="server"></asp:Literal>
-                    </div>
+                </div>
             </section>
 
             <section class="foto">
                 <asp:Image ID="imgFoto" runat="server" ImageUrl="~/images/feminino.jpeg" />
             </section>
         </main>
-       
+        <asp:Literal ID="litMensagem" runat="server"></asp:Literal>
     </form>
 </body>
 </html>

@@ -60,15 +60,6 @@ namespace prjTCC
         protected global::System.Web.UI.WebControls.Button btnEntrar;
 
         /// <summary>
-        /// Controle litMensagem.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litMensagem;
-
-        /// <summary>
         /// Controle imgFoto.
         /// </summary>
         /// <remarks>
@@ -76,5 +67,14 @@ namespace prjTCC
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image imgFoto;
+
+        /// <summary>
+        /// Controle litMensagem.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litMensagem;
     }
 }
