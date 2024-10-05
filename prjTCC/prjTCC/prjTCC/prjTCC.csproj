@@ -118,6 +118,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ADM\adicionarnovosusuarios.aspx" />
     <Content Include="ADM\cadastrarADM.html" />
     <Content Include="ADM\CadastrarTurmaADM.html" />
     <Content Include="ADM\calendarioADM.html" />
@@ -336,7 +337,6 @@
     <Content Include="Professor\css\evento.css" />
     <Content Include="Professor\css\frequencia.css" />
     <Content Include="Professor\css\turmaADM.css" />
-    <Content Include="Professor\dadosEmpresariasProfessor.aspx" />
     <Content Include="Professor\dadosMensaisProfessor.html" />
     <Content Include="Professor\eventoProfessor.html" />
     <Content Include="Professor\eventosProfessor.html" />
@@ -398,6 +398,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADM\adicionarnovosusuarios.aspx.cs">
+      <DependentUpon>adicionarnovosusuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADM\adicionarnovosusuarios.aspx.designer.cs">
+      <DependentUpon>adicionarnovosusuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="classe\Banco.cs" />
     <Compile Include="classe\Usuario.cs" />
     <Compile Include="classe\Usuarios.cs" />
@@ -470,13 +477,6 @@
     </Compile>
     <Compile Include="Professor\calendarioProfessor.aspx.designer.cs">
       <DependentUpon>calendarioProfessor.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Professor\dadosEmpresariasProfessor.aspx.cs">
-      <DependentUpon>dadosEmpresariasProfessor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Professor\dadosEmpresariasProfessor.aspx.designer.cs">
-      <DependentUpon>dadosEmpresariasProfessor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="redefinirSenha.aspx.cs">
