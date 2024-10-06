@@ -119,9 +119,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ADM\adicionarnovosusuarios.aspx" />
+    <Content Include="ADM\AnexarFatura.aspx" />
     <Content Include="ADM\cadastrarADM.html" />
     <Content Include="ADM\CadastrarTurmaADM.html" />
     <Content Include="ADM\calendarioADM.html" />
+    <Content Include="ADM\chamada.aspx" />
     <Content Include="ADM\controleADM.html" />
     <Content Include="ADM\css\cadastrar.css" />
     <Content Include="ADM\css\cadastrarTurma.css" />
@@ -135,7 +137,6 @@
     <Content Include="ADM\DadosEmpresariaisADM.html" />
     <Content Include="ADM\DespesasADM.html" />
     <Content Include="ADM\FaturaADM.html" />
-    <Content Include="ADM\frequenciaADM.html" />
     <Content Include="ADM\images\alice.jpg" />
     <Content Include="ADM\images\andrey.jpg" />
     <Content Include="ADM\images\auto_controle.png" />
@@ -405,6 +406,21 @@
     <Compile Include="ADM\adicionarnovosusuarios.aspx.designer.cs">
       <DependentUpon>adicionarnovosusuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ADM\AnexarFatura.aspx.cs">
+      <DependentUpon>AnexarFatura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADM\AnexarFatura.aspx.designer.cs">
+      <DependentUpon>AnexarFatura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADM\chamada.aspx.cs">
+      <DependentUpon>chamada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADM\chamada.aspx.designer.cs">
+      <DependentUpon>chamada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classe\Aluno.cs" />
     <Compile Include="classe\Banco.cs" />
     <Compile Include="classe\Usuario.cs" />
     <Compile Include="classe\Usuarios.cs" />
